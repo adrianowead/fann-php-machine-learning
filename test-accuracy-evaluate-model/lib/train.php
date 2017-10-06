@@ -50,7 +50,7 @@ class FannTrain{
 
     // this shuffle is only to simulate other data with another order
     // because the the result is different depending what rows is trained and what not
-    shuffle($this->dataCsv);
+    //shuffle($this->dataCsv);
 
     if( $this->verbose == 2 )
     {

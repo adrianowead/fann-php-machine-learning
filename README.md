@@ -6,8 +6,8 @@ Este repositório tem como objetivo reunir exemplos de como utilizar a bibliotec
 
 Para executar os exemplos, tenha instalado:
 
-[PHP >= 7.0](https://secure.php.net/index.php#id2017-09-29-1)
-[PHP FANN >= 2](https://github.com/bukka/php-fann)
+* [PHP >= 7.0](https://secure.php.net/index.php#id2017-09-29-1)
+* [PHP FANN >= 2](https://github.com/bukka/php-fann)
 
 Cada diretório possui seu próprio arquivo README.md com instruções específicas.
 
@@ -19,8 +19,8 @@ Talvez com um interesse maior da comunidade, futuramente o PHP esteja mais prepa
 
 Por enquanto a biblioteca FANN não suporta diversos tipos de redes mais complexas como:
 
-[Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network)
-[Long Short-Term Memory](https://en.wikipedia.org/wiki/Long_short-term_memory)
+* [Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network)
+* [Long Short-Term Memory](https://en.wikipedia.org/wiki/Long_short-term_memory)
 
 Que são utilizadas para problemas mais complexos, como reconhecimento facial, processamento de linguagem natural, etc...
 

@@ -61,7 +61,7 @@ $endTime = microtime(true);
 
 $time = abs( $endTime - $startTime );
 
-echo "Time to load, train and test network: {$time} seconds" . chr(13).chr(10);
+echo "Time to load csv, train and test network: {$time} seconds" . chr(13).chr(10);
 
 
 
