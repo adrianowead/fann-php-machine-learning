@@ -113,7 +113,12 @@ class FannTrain{
     // criando os dados de saida para um arquivo
     $file = fopen($target, "wb");
 
-    fwrite($file, implode(" ", [ sizeof( $this->x_dataset ), sizeof( $this->x_dataset[0] ), sizeof($this->y_dataset[0]) ])  );
+    fwrite($file, implode(" ", [ 
+      sizeof( $this->x_dataset ), 
+      sizeof( $this->x_dataset[0] ), 
+      ( is_array($this->y_dataset[0]) ? sizeof($this->y_dataset[0]) : strlen($this->y_dataset[0]) )
+      ])  
+    );
 
     foreach( $this->x_dataset as $k => $v ){
       fwrite($file, chr(13).chr(10) );
@@ -144,7 +149,7 @@ class FannTrain{
 
     // config network
     $num_input = sizeof( $this->x_dataset[0] );
-    $num_output = sizeof( $this->y_dataset[0] );
+    $num_output = ( is_array($this->y_dataset[0]) ? sizeof($this->y_dataset[0]) : strlen($this->y_dataset[0]) );
     $desired_error = $this->dropout;
     $max_epochs = $this->number_epochs;
     $epochs_between_reports = $this->batch_size;
